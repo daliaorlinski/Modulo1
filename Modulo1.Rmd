@@ -1,0 +1,256 @@
+---
+title: Iforme del Módulo 1
+authors:
+  - name: Catalina Alberto
+    department: Ingeniería Industrial
+    affiliation: Universidad Nacional de Cuyo
+    location: Mendoza
+    email: catavalberto@gmail.com
+  - name: Dalia Orlinski
+    department: Ingeniería Industrial
+    affiliation: Universidad Nacional de Cuyo
+    location: Mendoza
+    email: daliaorlinski@gmail.com
+  - name: Macarena Vacas
+    department: Ingeniería Industrial
+    affiliation: Universidad Nacional de Cuyo
+    location: Mendoza
+    email: macarenavacas2014@gmail.com
+  - name: Ana Victoria Silva
+    department: Ingeniería Industrial
+    affiliation: Universidad Nacional de Cuyo
+    location: Mendoza
+    email: victoriasilva201101@gmail.com
+  - name: Andrés Soria
+    department: Ingeniería Industrial
+    affiliation: Universidad Nacional de Cuyo
+    location: Mendoza
+    email: andressoria1221@gmail.com
+abstract: |
+  En este documento serán presentados los lenguajes de marcado HTML, LaTex y Markdown que se utilizan para formatear y estructurar contenido en diferentes contextos, como páginas web, documentos técnicos, informes académicos y más. Se presentará una breve explicación de cada uno y sus comandos principales para un uso adecuado. De esa forma, serán visibles sus similitudes y diferencias. 
+keywords:
+  - HTML
+  - LaTex
+  - Markdown
+bibliography: references.bib
+biblio-style: unsrt
+output: rticles::arxiv_article
+---
+
+# Lenguaje HTML
+
+HTML, que significa Lenguaje de Marcas de Hipertexto (HyperText Markup Language), es el lenguaje de marcado estándar para crear páginas web. HTML describe la estructura y el conetnido de una página web y consiste en una serie de elementos que le dicen al navegador cómo mostrar el contenido. Los navegadores web reciben documentos HTML desde un servidor web o desde un almacenamiento local y representan los documentos en páginas web multimedia. No es un lenguaje de programación, pero es fundamental para la construcción de sitios web.
+
+## Elementos básicos de HTML
+
+1. Encabezados: HTML tiene seis niveles de encabezados, desde `<h1>` hasta `<h6>`
+* `<h1> Encabezado 1 </h1>`
+* `<h2> Encabezado 2 </h2>`
+* `<h3> Encabezado 3 </h3>`
+* `<h4> Encabezado 4 </h4>`
+* `<h5> Encabezado 5 </h5>`
+* `<h6> Encabezado 6 </h6>`
+
+2. Párrafos: Los párrafos se definen con la etiqueta `<p>`
+
+* `<p>` Este es un párrafo de texto. `</p>`
+
+3. Negrita: se utilizan las etiquetas `<strong>` o `<b>`
+
+* `<strong>`: Esta etiqueta indica que el texto es de importancia fuerte o énfasis especial. Los navegadores generalmente renderizan este texto en negrita.
+  * `<strong>` texto en negrita `</strong>`
+* `<b>`: Esta etiqueta simplemente hace que el texto se vea en negrita, sin indicar importancia o énfasis especial.
+  * `<b>` texto en negrita `</b>`
+  
+4. Viñetas:  las viñetas (también conocidas como listas desordenadas) se crean utilizando la etiqueta `<ul>` (unordered list), y cada elemento de la lista se crea con la etiqueta `<li>` (list item). 
+
+```html
+<ul> 
+  <li> Elemento 1 </li>
+  <li> Elemento 2 </li>
+  <li> Elemento 3 </li>
+</ul>
+```
+5. Imágenes: Para mostrar imágenes en HTML, se utiliza la etiqueta `<img>`
+  * `<img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen">`
+  
+Opciones para imágenes:
+
+* width: Define el ancho de la imagen en píxeles o porcentaje.
+* height: Define la altura de la imagen en píxeles o porcentaje.
+* title: Proporciona un título para la imagen que se muestra cuando el usuario coloca el cursor sobre ella.
+  * `<img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen" width="300" height="200" title="Título de la imagen">`
+
+6. Tabla: Para crear una tabla en HTML, se pueden utilizar las etiquetas `<table>`, `<tr>`, `<th>` y `<td>`.
+
+* `<table>`: Define una tabla.
+* `<tr>`: Define una fila en la tabla.
+* `<th>`: Define un encabezado de columna. Por lo general, se usa en la primera fila de la tabla para los encabezados.
+* `<td>`: Define un dato de celda. Se utiliza para el contenido de las celdas de la tabla.
+
+7. Hipervínculo: Para crear un hipervínculo en HTML, se utiliza la etiqueta <a> (anchor) junto con href para especificar la URL a la que apunta el enlace.
+
+* `<a href="https://www.ejemplo.com"> `Texto del Enlace` </a>`
+
+# LaTex
+
+LaTeX es un sistema de preparación de documentos que facilita la escritura de documentos científicos y técnicos. Algunas de sus principales ventajas son la alta calidad de los documentos que genera, la posibilidad de poder escribir fórmulas matemáticas complejas y su método para gestionar las referencias y referencias
+cruzadas en un documento. A diferencia de los procesadores de texto comunes como Microsoft Word, LaTeX no es WYSIWYG (“Lo Que Ves Es Lo Que Obtienes”). En lugar de mostrar el resultado final en tiempo real, LaTeX utiliza comandos para definir la estructura y el formato del documento. El proceso de trabajo con LaTeX implica escribir el código fuente en LaTeX y luego compilarlo para generar un archivo PDF. Este PDF es el que se envía a los demás. En resumen, LaTeX es una herramienta poderosa para la creación de
+documentos técnicos y científicos, y su uso sigue siendo fundamental en la comunidad académica.
+
+## Elementos básicos de LaTex
+
+1. Encabezados: En LaTeX, los títulos se crean utilizando comandos específicos para cada nivel de título.
+* `\section{}`: Para la sección principal.
+* `\subsection{}`: Para subsecciones dentro de una sección.
+* `\subsubsection{}`: Para subsecciones de segundo nivel.
+* `\paragraph{}`: Para títulos de párrafo.
+* `\subparagraph{}`: Para títulos de subpárrafo.
+
+2. Párrafos: En LaTeX, los párrafos se crean automáticamente al dejar una línea en blanco en el código. No se necesita ningún comando especial para indicar el comienzo de un nuevo párrafo. Cada bloque de texto separado por una línea en blanco se considera un párrafo distinto. LaTeX se encarga automáticamente del espaciado y las sangrías de los párrafos.
+
+
+3. Negrita: El texto puede aparecer en negrita utilizando los comandos `\textbf{}` o `\bfseries`.
+* `\textbf{texto en negrita}`
+* `{\bfseries negrita}`
+
+`\textbf{}` se utiliza para aplicar negrita a un texto específico, mientras que `\bfseries` se utiliza para cambiar el formato de un grupo completo de texto a negrita.
+
+4. Viñetas: Se pueden crear listas con viñetas utilizando el entorno itemize.
+
+```
+\begin{itemize}
+    \item Primer elemento
+    \item Segundo elemento
+    \item Tercer elemento
+\end{itemize}
+
+```
+
+5. Imágenes: Para incluir imágenes en un documento LaTeX, se utiliza el paquete graphicx.
+Ejemplo en un artículo:
+
+````
+\documentclass{article}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{ejemplo.png}
+    \caption{Descripción de la imagen.}
+    \label{fig:ejemplo}
+\end{figure}
+
+\end{document}
+````
+Comandos:
+
+* ``\includegraphics{ejemplo.png}``: Este comando incluye la imagen llamada "ejemplo.png" en el documento.
+
+* ``\caption{Descripción de la imagen.}``: Este comando agrega una descripción a la imagen.
+
+* ``\label{fig:ejemplo}``: Este comando establece una etiqueta para la imagen, lo que permite hacer referencia a ella en el texto utilizando ``\ref{fig:ejemplo}``.
+
+* Se puede ajustar el tamaño de la imagen cambiando el valor del ancho en el comando ``\includegraphics[width=0.5\textwidth]{ejemplo.png}``. En este ejemplo, la imagen se mostrará con una anchura igual al 50% del ancho del texto en el documento.
+
+6. Tablas: Para crear tablas se puede utilizar el entorno tabular.
+
+````
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Col1 & Col2 & Col3 \\
+        \hline
+        Valor1 & Valor2 & Valor3 \\
+        Valor4 & Valor5 & Valor6 \\
+        \hline
+    \end{tabular}
+    \caption{Descripción de la tabla.}
+\end{table}
+````
+
+Comandos:
+
+* ``\begin{tabular}{|c|c|c|}``: Este comando indica el formato de la tabla. En este caso, hay tres columnas alineadas al centro (c) y cada columna está separada por líneas verticales (|).
+* ``\hline``: Estos comandos crean líneas horizontales en la tabla.
+* ``&``: Este símbolo separa las celdas de la tabla.
+* ``\\``: Este comando indica el final de una fila de la tabla.
+
+7. Hipervínculos: Para agregar hipervínculos en LaTeX, se utiliza el paquete hyperref. Se coloca al incio del documento: ``\usepackage{hyperref}``. Luego se puede colocar en cualquier parte del código el hipervínculo de la siguiente forma: ``\href{https://www.ejemplo.com}{https://www.ejemplo.com}``
+
+# Markdown
+
+Markdown es un lenguaje de marcado ligero que se utiliza para formatear texto de manera sencilla y legible. Fue creado por John Gruber y Aaron Swartz en 2004 con el objetivo de permitir que los escritores se centraran más en el contenido que en el formato. Markdown está diseñado para ser fácil de leer y escribir y puede ser convertido a varios formatos como HTML, PDF, DOCX, entre otros, utilizando diversas herramientas y bibliotecas.
+
+## Elementos básicos de Markdown
+
+1. Encabezados: Para crear encabezados, se utilizan símbolos # seguidos de un espacio. La cantidad de # indica el nivel del encabezado. Hay 6 niveles.
+
+````
+# Encabezado de nivel 1
+## Encabezado de nivel 2
+### Encabezado de nivel 3
+#### Encabezado de nivel 4
+##### Encabezado de nivel 5
+###### Encabezado de nivel 6
+````
+
+2. Párrafos: Los párrafos se crean simplemente separando bloques de texto con una o más líneas en blanco. No es necesario utilizar ningún carácter especial para indicar el inicio o el fin de un párrafo.
+
+3. Negrita: Rodea el texto con dos asteriscos ``'**'`` o dos guiones bajos ``'__'``.
+
+* ``**Texto en negrita**``
+
+4. Viñetas: Las listas con viñetas (listas desordenadas) se crean utilizando guiones '-', asteriscos '*', o signos '+' seguidos de un espacio antes del texto del ítem.
+
+````
+* Item 1
+* Item 2
+* Item 3
+````
+5. Imágenes: Se pueden insertar imágenes tanto de una URL como del mismo sistema de archivos.
+
+* URL: ``![Descripción de la imagen](https://www.example.com/imagen.jpg)``
+* Imágenes locales: ``![Descripción de la imagen](ruta/a/la/imagen.jpg)``
+
+6. Tablas: En Markdown, las tablas se crean utilizando barras verticales (|) para separar las columnas y guiones (-) para crear las líneas de separación entre el encabezado y el contenido de la tabla. 
+
+````
+| Columna 1 | Columna 2 | Columna 3 |
+|-----------|-----------|-----------|
+| Fila 1    | Valor 1   | Valor 2   |
+| Fila 2    | Valor 3   | Valor 4   |
+| Fila 3    | Valor 5   | Valor 6   |
+````
+
+7. Hipervínculos: Para crear un hipervínculo se utiliza la sintaxis: ``[Nombre del hipervínculo](https://www.paginaweb.com)``
+
+Link a página HTML del grupo Koala: https://daliaorlinski.github.io/CV_ORLINSKI/
+
+
+# Conclusión
+
+HTML, LaTex y Markdown son tres lenguajes de marcado que se utilizan ampliamente en la creación y formateo de contenido en diferentes contextos. Aunque tienen similitudes en el sentido de que todos se utilizan para estructurar y formatear texto, cada uno tiene sus propias características y usos particulares.
+
+Los tres lenguajes son fáciles de usar, aprender y utilizar en comparación con otros lenguajes de programación o sistemas de composición de texto más complejos. Además son compatibles con una gran variedad de plataformas y herramientas. 
+
+Sus usos más comunes son:
+* HTML: Creación de páginas web, desarrollo web, presentación de contenido en línea.
+* Markdown: Escritura de blogs, documentación de proyectos, foros en línea, toma de notas.
+* LaTeX: Producción de artículos académicos, libros, tesis, informes técnicos, presentaciones, documentos científicos.
+
+Markdown se puede relacionar con códigos R, lo que llamamos R Markdown, una herramienta que combina la facilidad de escritura de Markdown con la capacidad de ejecutar código R incrustado, lo que permite la creación de documentos dinámicos que incluyen texto, código, resultados de código y gráficos, todo en un solo lugar.
+
+Todas estas herramientas tienen un gran uso y apicaciones dentro del área académica, desde tomar apuntes hasta escribir una tesis. Luego se puede aplicar al área labora especialmente en ingeniería, donde se requiere documentación técnica, presentación de informes, comunicación de resultados y colaboración en proyectos.
+
+# Bibliografía
+
+* https://www.uv.es/~ivorra/Latex/LaTeX.pdf
+* https://guiasbib.upo.es/latex/introduccion
+* https://markdown.es/
+* https://www.argentina.gob.ar/contenidosdigitales/markdown
+* https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics
+* https://www.hostinger.com.ar/tutoriales/que-es-html
